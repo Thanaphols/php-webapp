@@ -29,7 +29,7 @@
       require 'req/navbar.php';
     ?>
     <form method="post">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
           <div class="col-lg-12 text-center mt-3">
             <h3>การจัดการข้อมูลการยืม-คืนหนังสือ</h3>
@@ -40,19 +40,20 @@
           
         </div>
         <div class="col-lg-6  mt-3 form-inline">
-            <input id="search" class="form-control w-75 mr-2" type="text" 
+            <input id="search" class="form-control mr-2" type="text" 
             name="search" placeholder="ค้นหาจากชื่อ">
-            <button type="submit" class="btn btn-primary">ค้นหา</button>
+            
           </div>
-          <div class="col-lg-3">
-          
+          <div class="col-lg-3  mt-3">
+          <button type="submit" class="btn btn-primary">ค้นหา</button>
         </div>
       </div>
       <div class="row ">
         <div class="col-lg-8">
           
         </div>
-        <div class="col-lg-2  mt-3 form-inline">
+
+        <div class="col-lg-4  mt-3 form-inline">
            <a href="borrow.php" class="btn btn-primary mr-2">ยืม-คืนหนังสือ</a>
             <a href="dashboard.php" class="btn btn-primary">ข้อมูลสถิติ</a>
           </div>
