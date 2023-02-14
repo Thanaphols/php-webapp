@@ -53,8 +53,8 @@
           
         </div>
         <div class="col-lg-2  mt-3 form-inline">
-           <a href="" class="btn btn-primary mr-2">ยืม-คืนหนังสือ</a>
-            <button type="submit" class="btn btn-primary">ข้อมูลสถิติ</button>
+           <a href="borrow.php" class="btn btn-primary mr-2">ยืม-คืนหนังสือ</a>
+            <a href="dashboard.php" class="btn btn-primary">ข้อมูลสถิติ</a>
           </div>
           
       </div>
