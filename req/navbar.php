@@ -5,14 +5,11 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">ข้อมูลสมาชิก</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">ข้อมูลหนังสือ</a>
-            </li>
             <li class="navbar-item">
             <a class="nav-link" href="#">ตารางข้อมูลการยืม-คืน</a>    
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="dashboard.php">ข้อมูลสถิติของห้องสมุด</a>
             </li>
           </ul>
         </div>
