@@ -14,7 +14,6 @@
   if(isset($_POST["b_id"] ) || (isset( $_POST["m_user"] ))){
     if(($_POST["b_id"] =='รหัสหนังสือ') || ($_POST["m_user"] == 'ผู้ที่ต้องการยืม')){
       if($b_name !='' || $b_id !=''){
-        
       }
       echo "<script>alert('ชื่อผู้ใช้ หรือ ไอดีหนังสือ ไม่ถูกต้อง')</script>";
     }
@@ -30,8 +29,9 @@
     if( $m_user == ' ' || $b_id == ''){
       echo "<script>alert('กรูณากรอกข้อมูลให้ครบก่อนยืม')</script>";
     }
-    $SQL4 = 'INSERT INTO tb_borrow_book (br_date_br,b_id,m_user) VALUES ("NOW()","'.$b_id.'","'.$m_user.'") ';
+    $SQL4 = 'INSERT INTO tb_borrow_book (br_date_br,b_id,m_user) VALUES (NOW(),"'.$b_id.'","'.$m_user.'") ';
     echo $SQL4;
+    //runSQL($SQL4);
   }
   ?>
     <meta charset="UTF-8">
