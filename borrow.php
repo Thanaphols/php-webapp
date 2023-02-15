@@ -23,19 +23,6 @@
     // echo $SQL4;
     $user = getData($SQL4);
   }
-  // if (isset($_POST["b_id"]) || (isset($_POST["m_user"]))) {
-  //   if (($_POST["b_id"] == 'รหัสหนังสือ') || ($_POST["m_user"] == 'ผู้ที่ต้องการยืม')) {
-  //     if ($b_name != '' || $b_id != '') {
-  //     }
-  //     echo "<script>alert('ชื่อผู้ใช้ หรือ ไอดีหนังสือ ไม่ถูกต้อง')</script>";
-  //   }
-  //   $m_user = $_POST["m_user"];
-  //   $b_id = $_POST["b_id"];
-  //   $SQL3 = 'SELECT b_name FROM tb_book WHERE b_id= "' . $b_id . '" ';
-  //   $result = mysqli_query($GLOBALS['conn'], $SQL3);
-  //   $data = mysqli_fetch_assoc($result);
-  //   @$b_name =  $data['b_name'];
-  // }
 
   if (!empty($_POST['borrow'])) {
     if (!empty($_GET['b_id']) || !empty($_GET['m_user'])) {
