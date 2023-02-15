@@ -40,14 +40,14 @@
   if (!empty($_POST['borrow'])) {
     if (!empty($_GET['b_id']) || !empty($_GET['m_user'])) {
       $SQL4 = 'INSERT INTO tb_borrow_book (br_date_br,b_id,m_user) VALUES (NOW(),"' . $b_id . '","' . $m_user . '") ';
-      echo $SQL4;
-      $res = runSQL($SQL4);
+      // echo $SQL4;
+      $res = mysqli_query($GLOBALS['conn'], $SQL4);
       if ($res) {
         echo "<script>alert('บันทึกข้อมูลแล้ว')</script>";
         echo '<meta http-equiv="refresh" content="0; url=index.php">';
+      } else {
+        echo "<script>alert('ไม่สามารถยืมหนังสือได้')</script>";
       }
-    } else {
-      echo "<script>alert('กรูณากรอกข้อมูลให้ครบก่อนยืม')</script>";
     }
   }
   ?>
@@ -66,7 +66,7 @@
 
   <div class="container">
     <div class="row text-center ">
-      
+
       <div class="col-lg-4">
       </div>
       <div class="col-lg-4   mt-3 ">
@@ -121,7 +121,7 @@
           </div>
           <div class="row">
             <div class="col-lg-12 mt-3">
-            <button type="submit" class="btn btn-primary">ตกลง</button>
+              <button type="submit" class="btn btn-primary">ตกลง</button>
             </div>
           </div>
       </div>
