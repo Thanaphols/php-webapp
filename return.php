@@ -89,7 +89,11 @@
                             <?php
                             foreach ($result as $row) {
                             ?>
-                                <option value="<?= $row['b_id'] ?>"><?= $row['b_id'] ?></option>
+                                <option value="<?= $row['b_id'] ?>" <?php 
+                                if (@$_POST['b_id'] == $row['b_id']) {
+                                    echo 'selected';
+                                }
+                                ?>><?= $row['b_id'] ?></option>
                             <?php } ?>
                         </select>
                     </div>
